@@ -1,0 +1,36 @@
+/* ============================================================ */
+
+header, footer {
+    background: #222;
+    color: #777;
+}
+nav {
+    width: 800px;
+    margin: 0 auto;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+    padding: 10px 0;
+    list-style: none;
+}
+nav ul li a {
+    font-family: Audiowide;
+    font-size: 16px;
+    padding: 7px 14px;
+}
+header nav { text-align: left; }
+footer nav { text-align: center; }
+
+/* ============================================================ */
+
+table.users {
+    width: 100%;
+    border-collapse: collapse;
+}
+table.users tr:nth-child(odd)  { background: rgba(0,0,0,.2); }
+table.users tr:nth-child(even) { background: rgba(0,0,0,.3); }
+table.users tr:hover           { background: rgba(255,255,255,.1); }

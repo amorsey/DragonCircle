@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%=title%></title>
+    <!-- STYLES:  W3.CSS framework, Font-Awesome icons, and our custom style.css --> 
+    <link rel="stylesheet" href="/public/css/w3.css">
+    <link rel="stylesheet" href="/public/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/public/css/style.css"> 
+    <!-- SCRIPTS:  webRTC adapter for browser compatibility, jquery for easy DOM/AJAX utility, blockUI for interface control, 
+                   Janus for Data Channel chat, webRTC mic/cam, Streaming files/audio, Recording, et cetera -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/3.1.5/adapter.min.js" ></script>
+    <script src="/public/lib/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js" ></script>
+    <script type="text/javascript" src="/public/lib/janus.js" ></script>
+    <!-- Setting up the Session and Handle to the textroom plugin -->
+    <script type="text/javascript" src="/public/lib/textroomtest.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/database">DATABASE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content-body">
+        <%-body%>
+    </section>
+
+    <footer>
+       &copy; Dragon Circle 2017.  All rights reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,22 @@
+    <section>
+    <button class="" autocomplete="off" id="start">Start</button>
+
+	<div class="w3-hide" id="roomjoin">
+      <input class="" type="text" placeholder="Choose a display name" autocomplete="off" id="username" onkeypress="return checkEnter(this, event);"></input>
+		<button class="" autocomplete="off" id="register">Join the room</button>
+    </div>
+    </section>
+
+    <section>&nbsp;</section>
+
+    <section class="w3-hide" id="room">
+			<h3>+Participants+  You: <span id="participant"></h3>
+			<ul id="list" class="list-group">
+			</ul>
+			<h3>Dragon Chat</h3>
+							
+			<div style="overflow-x: auto;" id="chatroom">
+			</div>
+			<input class="" type="text" placeholder="Write a chatroom message" autocomplete="off" id="datasend" onkeypress="return checkEnter(this, event);" disabled></input>
+			
+    </section>
